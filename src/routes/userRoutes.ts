@@ -68,6 +68,6 @@ const router = Router();
  *                   items:
  *                     $ref: '#/components/schemas/User'
  */
-router.get('/users', getUsers);
+router.get('/', getUsers);
 
 export default router;

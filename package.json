@@ -8,6 +8,7 @@
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "check-format": "prettier . --check",
     "fix-format": "prettier . --write",
     "test": "jest"

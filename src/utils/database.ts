@@ -1,4 +1,4 @@
-import mongoose, { mongo } from 'mongoose';
+import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -11,6 +11,6 @@ const connectDB = async () => {
     console.log(err);
     process.exit(1);
   }
-}
+};
 
 export default connectDB;

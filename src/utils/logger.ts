@@ -6,10 +6,10 @@ const logger = createLogger({
     format.colorize(),
     format.timestamp(),
     format.printf(
-      ({ timestamp, level, message }) => `${timestamp} ${level}: ${message}`
-    )
+      ({ timestamp, level, message }) => `${timestamp} ${level}: ${message}`,
+    ),
   ),
-  transports: [new transports.Console()]
+  transports: [new transports.Console()],
 });
 
 export default logger;

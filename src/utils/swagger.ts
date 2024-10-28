@@ -5,7 +5,7 @@ const options = {
     openapi: '3.0.0',
     info: {
       title: 'API Documentation',
-      version: '1.0.0'
+      version: '1.0.0',
     },
     servers: [
       {
@@ -13,7 +13,7 @@ const options = {
       },
     ],
   },
-  apis: ['./src/routes/*.ts']
+  apis: ['./src/routes/*.ts'],
 };
 
 const swaggerSpec = swaggerJsdoc(options);

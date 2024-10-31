@@ -1,5 +1,7 @@
 import { Router } from 'express';
-import { getUsers } from '../controllers/userController';
+import { createUser, getUserById, getUsers } from '../controllers/userController';
+import { getUserByIdValidator } from '../validators/userValidators';
+import { validateWith } from '../middlewares/validateRequest';
 
 const router = Router();
 
@@ -69,5 +71,9 @@ const router = Router();
  *                     $ref: '#/components/schemas/User'
  */
 router.get('/', getUsers);
+
+router.get('/:id', validateWith(getUserByIdValidator), getUserById);
+
+router.post('/', createUser);
 
 export default router;

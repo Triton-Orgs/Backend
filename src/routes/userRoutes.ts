@@ -1,5 +1,9 @@
 import { Router } from 'express';
-import { createUser, getUserById, getUsers } from '../controllers/userController';
+import {
+  createUser,
+  getUserById,
+  getUsers,
+} from '../controllers/userController';
 import { getUserByIdValidator } from '../validators/userValidators';
 import { validateWith } from '../middlewares/validateRequest';
 
